@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - Team Enrollment</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1>EduGenie</h1>
+
+        <p>
+            Google Gemini Powered Learning Assistant
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Team Enrollment</h2>
+
+        <form action="/enroll" method="post" id="enrollment-form">
+
+            <label>Team Name</label>
+
+            <input
+                type="text"
+                name="team_name"
+                required
+            >
+
+            <label>Student Name</label>
+
+            <input
+                type="text"
+                name="student_name"
+                required
+            >
+
+            <label>Department</label>
+
+            <input
+                type="text"
+                name="department"
+                required
+            >
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                name="email"
+                required
+            >
+
+            <button type="submit">
+                Enroll & Continue
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', path='js/script.js') }}"></script>
+
+</body>
+</html>
